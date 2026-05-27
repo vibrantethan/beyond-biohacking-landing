@@ -29,12 +29,12 @@ export default function Products() {
               <div className="product-tags">
                 {p.tags.map((t) => <span className="product-tag" key={t}>{t}</span>)}
               </div>
-              <a className="more" href="#form">
+              <span className="more">
                 Ask about this at the booth
                 <svg width="14" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
                 </svg>
-              </a>
+              </span>
             </div>
           ))}
         </div>

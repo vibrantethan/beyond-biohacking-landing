@@ -26,9 +26,9 @@ export default function About() {
               <div className="desc">Read in a single, integrated report.</div>
             </div>
             <div className="stat">
-              <div className="num">24h</div>
-              <div className="lab">Provider Match</div>
-              <div className="desc">Get paired after sign-up at Beyond.</div>
+              <div className="num">1000<sup>+</sup></div>
+              <div className="lab">Providers</div>
+              <div className="desc">Thousands of trained providers ready to match.</div>
             </div>
           </div>
         </div>
