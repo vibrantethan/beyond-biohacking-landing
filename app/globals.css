@@ -485,15 +485,36 @@ a { color: inherit; text-decoration: none; }
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
-/* ─── Photo strips ─── */
-.photo-strip { width: 100%; overflow: hidden; line-height: 0; }
-.photo-strip img { width: 100%; height: 480px; object-fit: cover; object-position: center; display: block; }
-@media (max-width: 760px) { .photo-strip img { height: 280px; } }
+/* ─── Parallax photo strips ─── */
+.photo-strip {
+  width: 100%;
+  height: clamp(240px, 28vw, 420px);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
-.about-photo { margin-top: 48px; border-radius: 12px; overflow: hidden; }
-.about-photo img { width: 100%; height: 480px; object-fit: cover; object-position: center top; display: block; }
-@media (max-width: 760px) { .about-photo img { height: 300px; } }
+.about-photo {
+  margin-top: 48px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: clamp(220px, 26vw, 400px);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}
 
-.how-photo { margin-top: 48px; border-radius: 12px; overflow: hidden; }
-.how-photo img { width: 100%; height: 420px; object-fit: cover; object-position: center top; display: block; }
-@media (max-width: 760px) { .how-photo img { height: 280px; } }
+.how-photo {
+  margin-top: 48px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: clamp(200px, 24vw, 380px);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}
+
+/* Disable parallax on mobile — fixed bg doesn't render well on iOS */
+@media (max-width: 760px) {
+  .photo-strip, .about-photo, .how-photo { background-attachment: scroll; }
+}

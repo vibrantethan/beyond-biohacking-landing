@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function HowItWorks() {
   return (
     <section className="section navy" id="how">
@@ -23,15 +21,6 @@ export default function HowItWorks() {
             <h4>Test &amp; interpret</h4>
             <p>Your provider orders the right panel, you collect samples at home or a draw site, and review results together.</p>
           </div>
-        </div>
-        <div className="how-photo">
-          <Image
-            src="/assets/vw-unboxing.jpg"
-            alt="Patient reviewing Vibrant Wellness collection instructions at home"
-            width={1320}
-            height={420}
-            style={{ width: "100%", height: "auto" }}
-          />
         </div>
       </div>
     </section>

@@ -4,7 +4,6 @@ import EventStrip from "@/components/EventStrip";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Image from "next/image";
 import Products from "@/components/Products";
 import HowItWorks from "@/components/HowItWorks";
 import Credentials from "@/components/Credentials";
@@ -27,15 +26,7 @@ export default function Page() {
       <Hero onJump={jump} />
       <About />
       <Products />
-      <section className="photo-strip">
-        <Image
-          src="/assets/kit-flatlay.jpg"
-          alt="Vibrant Wellness test kit contents laid out flat"
-          width={2000}
-          height={480}
-          style={{ width: "100%", height: "auto" }}
-        />
-      </section>
+      <section className="photo-strip" style={{ backgroundImage: "url('/assets/kit-flatlay.jpg')" }} />
       <HowItWorks />
       <Credentials />
       <BoothCTA onJump={jump} />

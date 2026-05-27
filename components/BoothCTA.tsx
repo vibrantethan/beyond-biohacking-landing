@@ -33,9 +33,8 @@ export default function BoothCTA({ onJump }: BoothCTAProps) {
             <Image
               src="/assets/kit-opening.jpg"
               alt="Opening a Vibrant Wellness Specimen Collection Kit"
-              width={600}
-              height={800}
-              style={{ width: "100%", height: "auto", borderRadius: 12, objectFit: "cover", maxHeight: 480 }}
+              fill
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </div>
         </div>
