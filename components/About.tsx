@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section className="section" id="about">
@@ -31,6 +33,15 @@ export default function About() {
               <div className="desc">Thousands of trained providers ready to match.</div>
             </div>
           </div>
+        </div>
+        <div className="about-photo">
+          <Image
+            src="/assets/kit-lifestyle.jpg"
+            alt="Vibrant Wellness collection kits with healthy lifestyle"
+            width={1320}
+            height={480}
+            style={{ width: "100%", height: "auto" }}
+          />
         </div>
       </div>
     </section>

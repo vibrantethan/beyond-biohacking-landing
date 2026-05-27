@@ -20,7 +20,7 @@ export default function Nav({ onJump }: NavProps) {
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-inner">
         <div className="nav-brand">
-          <a className="vw" href="#top">
+          <a className="vw" href="https://vibrant-wellness.com" target="_blank" rel="noreferrer">
             <Image src="/assets/vw-logo.png" alt="Vibrant Wellness" width={120} height={32} style={{ height: 32, width: "auto" }} />
           </a>
           <div className="divider" />

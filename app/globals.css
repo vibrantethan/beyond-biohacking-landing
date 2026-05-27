@@ -357,8 +357,7 @@ a { color: inherit; text-decoration: none; }
 }
 .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); border-color: var(--vw-teal-soft); }
 .product-card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 18px; }
-.product-icon { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.product-icon svg { width: 30px; height: 30px; stroke: var(--vw-navy-ink); stroke-width: 1.5; fill: none; }
+.product-icon { width: 64px; height: 64px; flex-shrink: 0; }
 .product-card h4 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; color: var(--vw-navy-ink); margin: 0; line-height: 1.1; flex: 1; padding-top: 8px; }
 .product-card p { font-size: 0.92rem; line-height: 1.55; color: var(--vw-text-muted); margin: 0 0 22px; }
 .product-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
@@ -485,3 +484,16 @@ a { color: inherit; text-decoration: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+/* ─── Photo strips ─── */
+.photo-strip { width: 100%; overflow: hidden; line-height: 0; }
+.photo-strip img { width: 100%; height: 480px; object-fit: cover; object-position: center; display: block; }
+@media (max-width: 760px) { .photo-strip img { height: 280px; } }
+
+.about-photo { margin-top: 48px; border-radius: 12px; overflow: hidden; }
+.about-photo img { width: 100%; height: 480px; object-fit: cover; object-position: center top; display: block; }
+@media (max-width: 760px) { .about-photo img { height: 300px; } }
+
+.how-photo { margin-top: 48px; border-radius: 12px; overflow: hidden; }
+.how-photo img { width: 100%; height: 420px; object-fit: cover; object-position: center top; display: block; }
+@media (max-width: 760px) { .how-photo img { height: 280px; } }
